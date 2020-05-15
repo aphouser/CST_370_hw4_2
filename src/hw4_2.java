@@ -19,7 +19,6 @@ public class hw4_2 {
         ArrayList<String> cities = new ArrayList<String>();
         ArrayList<String> visited = new ArrayList<String>();
         ArrayList<String> output = new ArrayList<String>();
-        ListIterator lstItr = visited.listIterator();
         TreeSet<String> foutput = new TreeSet<String>();
         ArrayList<ArrayList<String>> list = new ArrayList<ArrayList<String>>();
 
@@ -89,18 +88,6 @@ public class hw4_2 {
         for (int y = 0; y < visited.size(); y++) {
             foutput.add(visited.get(y));
         }
-
-//        // print arraylists
-//        for (int m = 0; m < v; m++) {
-//            System.out.print(m);
-//            System.out.print(cities.get(m));
-//            if (list.get(m).size() > 0) {
-//                for (int n =0; n < list.get(m).size(); n++)
-//                    System.out.print("->" + list.get(m).get(n));
-//            }
-//
-//            System.out.print("\n");
-//        }
 
         // print final
         Iterator<String> iterator = foutput.iterator();
